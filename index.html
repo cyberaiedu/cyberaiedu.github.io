@@ -89,6 +89,7 @@
                 <li class="menuItem"><a href="#nsf">NSF Project Description</a></li>
                 <li class="menuItem"><a href="#topics">Topics</a></li>
                 <li class="menuItem"><a href="#program">Program</a></li>
+                <li class="menuItem"><a href="#speakers">Invited Speakers</a></li>
                 <li class="menuItem"><a href="#organizers">Organizers</a></li>
                 <li class="menuItem"><a href="#contact">Contact</a></li>
             </ul>
@@ -187,6 +188,25 @@
                     border: 3px solid rgba(0, 0, 0, 0.08);
                     background: #fff;
                 }
+                .speaker-card {
+                    background: #fff;
+                    border: 1px solid rgba(0,0,0,0.08);
+                    border-radius: 10px;
+                    padding: 16px 18px;
+                    margin: 14px 0;
+                }
+                .speaker-card h4 {
+                    margin-top: 0;
+                    margin-bottom: 6px;
+                }
+                .speaker-meta {
+                    color:#666;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                .speaker-label {
+                    font-weight: 700;
+                }
             </style>
 
             <div class="row" style="margin-bottom: 15px;">
@@ -277,6 +297,141 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Invited Speakers -->
+<div id="speakers" class="content-section-a" style="border-top: 0">
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Invited Speakers</h3>
+            <!-- <p class="lead" style="text-align:justify">
+                The workshop features invited speakers whose work spans applied AI for education, trustworthy generative AI, and safe/verified machine learning.
+            </p> -->
+
+            <!-- Order follows the session listing in the program table -->
+
+            <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/wei.jpg" alt="Wei Ding">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Wei Ding</b></h4>
+                        <div class="speaker-meta">Executive Director, Paul English Applied AI Institute & Distinguished Professor of Computer Science, UMass Boston</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            Wei Ding is the Executive Director of the Paul English Applied AI Institute and a Distinguished Professor of Computer Science at UMass Boston. She previously served as a Program Director at the National Science Foundation (2019–2023) and received the NSF Director’s Award in 2022.
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Keynote:</span>
+                            In this keynote, Professor Ding will share practical lessons from building the Paul English Applied AI Institute at UMass Boston and leading the Youth STEAM Initiative, where she mentors middle and high school students to apply AI and STEAM skills in service of community needs. She will highlight what has worked to translate AI into education impact at scale, including program design, partnership models, and outcomes that can be replicated across institutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/giri.jpg" alt="Giri Narasimhan">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Giri Narasimhan</b></h4>
+                        <div class="speaker-meta">Florida International University</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            TBD
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Talk abstract:</span>
+                            TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/jundong.jpg" alt="Jundong Li">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Jundong Li</b></h4>
+                        <div class="speaker-meta">Associate Professor, University of Virginia (ECE &amp; CS)</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            Jundong Li is an Associate Professor at the University of Virginia with joint appointments in the Department of Electrical and Computer Engineering and the Department of Computer Science. His research spans data mining, machine learning, and artificial intelligence, with a particular emphasis on graph machine learning and trustworthy, safe machine learning. His work has received multiple best paper awards and early career research honors.
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Talk abstract:</span>
+                            Modern machine learning models can absorb sensitive, copyrighted, or harmful information from their training data, raising concerns when such data must be removed after deployment. Machine unlearning aims to eliminate the influence of specific data without retraining models from scratch. This talk focuses on trustworthy machine unlearning and two fundamental challenges: certification, which guarantees that unlearning is sufficiently accurate, and verification, which enables independent assessment of whether unlearning has truly occurred. I introduce certified unlearning approaches that bound the gap between unlearned and retrained models, and show that existing verification techniques can be circumvented by adversarial unlearning strategies, revealing critical gaps in current unlearning guarantees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/kai.jpg" alt="Kai Shu">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Kai Shu</b></h4>
+                        <div class="speaker-meta">Assistant Professor of Computer Science, Emory University</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            Kai Shu is an Assistant Professor of Computer Science at Emory University. His research focuses on trustworthy AI, responsible machine learning, and social computing, with applications in education, healthcare, and cybersecurity. His work has been published in top conferences and journals including KDD, ICML, ICLR, EMNLP, and TKDE. He is a recipient of an NSF CAREER Award and multiple faculty research awards from Cisco, Google, and Microsoft.
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Talk abstract:</span>
+                            Generative AI systems such as large language models (LLMs) are increasingly used as knowledge sources in education and other high-stakes settings, yet their reliability remains poorly understood. This talk examines two fundamental challenges—hallucinations and model editing—drawing on recent work showing that targeted knowledge edits can have unintended societal effects, and that mitigating hallucinations requires improved uncertainty quantification and inference-time decoding strategies. Using education as a diagnostic lens, we discuss implications for AI reliability, social trust, and future research on trustworthy generative models and AI agents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/raha.jpg" alt="Raha Moraffah">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Raha Moraffah</b></h4>
+                        <div class="speaker-meta">Worcester Polytechnic Institute</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            TBD
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Talk abstract:</span>
+                            TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="row">
+                    <div class="col-sm-3" style="text-align:center; margin-bottom:10px;">
+                        <img class="speaker-avatar" src="img/speaker/chengshuai.jpg" alt="Chengshuai Zhao">
+                    </div>
+                    <div class="col-sm-9">
+                        <h4><b>Chengshuai Zhao</b></h4>
+                        <div class="speaker-meta">Arizona State University</div>
+                        <p style="text-align:justify; margin-bottom:8px;">
+                            <span class="speaker-label">Bio:</span>
+                            TBD
+                        </p>
+                        <p style="text-align:justify; margin-bottom:0;">
+                            <span class="speaker-label">Talk abstract:</span>
+                            TBD
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
     </div>
 </div>
