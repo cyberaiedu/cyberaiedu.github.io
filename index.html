@@ -55,9 +55,8 @@
                 style="text-shadow: 0px 8px 4px black, 0 0 25px black">
                 Date: Monday, February 16, 2026 • 1:00-3:00 PM EST
                 <br>
-                Location: <span style="opacity:0.95">Zoom</span>
-                <br>
                 Zoom: <a href="https://us06web.zoom.us/j/86561586556?pwd=n8pq1SGTYH5q5VScak6RbuJlZumeIr.1" target="_blank" rel="noopener noreferrer" style="color:#fff; text-decoration: underline;">Join the Meeting</a>
+                <br>    
             </h3>
 
             <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black">
@@ -190,6 +189,21 @@
                     border: 3px solid rgba(0, 0, 0, 0.08);
                     background: #fff;
                 }
+                /* Center content in each speaker column */
+                .speaker-col {
+                    text-align: center;
+                }
+                /* Evenly distribute invited speakers across the row */
+                .speakers-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                }
+                .speakers-row .speaker-col {
+                    flex: 0 1 180px;
+                    margin-bottom: 10px;
+                }
                 .speaker-card {
                     background: #fff;
                     border: 1px solid rgba(0,0,0,0.08);
@@ -211,41 +225,31 @@
                 }
             </style>
 
-            <div class="row" style="margin-bottom: 15px;">
-                <div class="col-sm-2 col-xs-6" style="margin-bottom: 10px;">
-                    <center>
+            <div class="row speakers-row" style="margin-bottom: 15px;">
+                <div class="speaker-col">
                         <img class="speaker-avatar" src="img/speaker/wei.jpg" alt="Wei Ding (placeholder photo)">
                         <div style="margin-top:8px;"><b>Wei Ding</b></div>
                         <div style="font-size:12px; color:#666;">University of Massachusetts Boston</div>
-                    </center>
                 </div>
-                <div class="col-sm-2 col-xs-6" style="margin-bottom: 10px;">
-                    <center>
+                <div class="speaker-col">
                         <img class="speaker-avatar" src="img/speaker/giri.jpg" alt="Giri Narasimhan (placeholder photo)">
                         <div style="margin-top:10px;"><b>Giri Narasimhan</b></div>
                         <div style="font-size:12px; color:#666;">Florida International University</div>
-                    </center>
                 </div>
-                <div class="col-sm-2 col-xs-6" style="margin-bottom: 10px;">
-                    <center>
+                <div class="speaker-col">
                         <img class="speaker-avatar" src="img/speaker/jundong.jpg" alt="Jundong Li (placeholder photo)">
                         <div style="margin-top:8px;"><b>Jundong Li</b></div>
                         <div style="font-size:12px; color:#666;">University of Virginia</div>
-                    </center>
                 </div>
-                <div class="col-sm-2 col-xs-6" style="margin-bottom: 10px;">
-                    <center>
+                <div class="speaker-col">
                         <img class="speaker-avatar" src="img/speaker/raha.jpg" alt="Raha Moraffah (placeholder photo)">
                         <div style="margin-top:8px;"><b>Raha Moraffah</b></div>
                         <div style="font-size:12px; color:#666;">Worcester Polytechnic Institute</div>
-                    </center>
                 </div>
-                <div class="col-sm-2 col-xs-6" style="margin-bottom: 10px;">
-                    <center>
+                <div class="speaker-col">
                         <img class="speaker-avatar" src="img/speaker/chengshuai.jpg" alt="Chengshuai Zhao (placeholder photo)">
                         <div style="margin-top:8px;"><b>Chengshuai Zhao</b></div>
                         <div style="font-size:12px; color:#666;">Arizona State University</div>
-                    </center>
                 </div>
             </div>
 
